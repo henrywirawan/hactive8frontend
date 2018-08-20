@@ -9,32 +9,54 @@
 <body>
 	<div class="container">
 		<div class="card p-5 mt-4 w-50 ml-auto mr-auto">
-			<form class="form-group" action="https://formspree.io/henrywirawanspam@gmail.com" method="POST">
-				<label>Nama Lengkap</label>
-				<input class="form-control" type="text" name="nama">
-				<label>Email</label>
-				<input class="form-control" type="email" name="email">
-				<label>Password</label>
-				<input class="form-control" type="password" name="password">
-				<label>Jenis Kelamin</label>
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="pria">
-					<label class="form-check-label">Pria</label>
+			<form class="" action="https://formspree.io/henrywirawanspam@gmail.com" method="POST">
+				
+				<div class="form-group">
+					<label for="nama">Nama</label>
+					<div class="form-row">
+						<div class="col-lg-5">
+							<input class="form-control" type="text" placeholder="Depan" name="nama_depan" id="nama_depan">
+						</div>
+						<div class="col-lg-7">
+							<input class="form-control" type="text" placeholder="Belakang" name="nama_belakang" id="nama_belakang">
+						</div>
+					</div>
 				</div>
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="wanita">
-					<label class="form-check-label">Wanita</label>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input class="form-control" type="email" name="email" id="email">
 				</div>
-				<label>Telepon</label>
-				<input class="form-control" type="text" name="telepon">
-				<label>Upload KTP</label>
-				<input class="form-control-file" type="file" name="ktp">
-				<label>Jurusan</label>
-				<select class="form-control">
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input class="form-control" type="password" name="password" id="password">
+				</div>
+				<div class="form-group">
+					<label for="">Jenis Kelamin</label>
+					<div class="form-check" id="">
+						<input class="form-check-input" type="radio" name="pria" id="">
+						<label class="form-check-label" id="">Pria</label>
+					</div>
+					<div class="form-check" id="">
+						<input class="form-check-input" type="radio" name="wanita" id="">
+						<label class="form-check-label" id="">Wanita</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="telepon">Telepon</label>
+					<input class="form-control" type="text" name="telepon" id="telepon">
+				</div>
+				<div class="form-group">
+					<label for="uploadktp">Upload KTP</label>
+					<input class="form-control-file" type="file" name="ktp" id="uploadktp">
+				</div>
+				<div class="form-group">
+					<label for="jurusan">Jurusan</label>
+					<select class="form-control" id="jurusan">
+					</select>
 					<option>Information System</option>
 					<option>Hospitality</option>
 					<option>Management</option>
-				</select>
+				</div>
 
 				<div class="mt-4 float-right">
 					<button class="btn btn-primary" type="submit">Daftar</button>
